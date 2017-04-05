@@ -1,0 +1,40 @@
+package salariophr;
+
+
+
+import java.util.Scanner;
+
+
+public class SalarioPhr {
+
+   
+    public static void main(String[] args) 
+    {
+       Scanner SalarioPhr = new Scanner(System.in);
+        System.out.println("Digite seu nome");
+            String nome = SalarioPhr.next();
+        System.out.println("Digite as Horas trabalhadas");
+        int hrtrab = SalarioPhr.nextInt();
+        System.out.println("Valor da hr trabalhada");
+        int valor = SalarioPhr.nextInt();
+        System.out.println("Digite seu nivel");
+        int nivel = SalarioPhr.nextInt();
+        
+        int mes ;
+        
+        int Salario  = (hrtrab * valor );
+        
+        switch (nivel){
+            case 1:System.out.println("Valor da hr : R$15,00 REAIS Seu salario é: " + Salario);
+          System.out.println( "O funcionario " + nome + " trabalhou " +hrtrab+ " horas por R$ " +valor+ " e deve receber R$" +Salario );break;      
+            case 2:System.out.println("Valor da hr : R$18,00 REAIS Seu salario é: " + Salario);
+             System.out.println( "O funcionario " + nome + " trabalhou " +hrtrab+ " horas por R$ " +valor+ " e deve receber R$" +Salario );break;
+            case 3:System.out.println("Valor da hr : R$22,00 REAIS Seu salario é: " + Salario);
+             System.out.println( "O funcionario " + nome + " trabalhou " +hrtrab+ " horas por R$ " +valor+ " e deve receber R$" +Salario );break;
+            case 4:System.out.println("Valor da hr : R$27,00 REAIS Seu salario é: " + Salario);
+             System.out.println( "O funcionario " + nome + " trabalhou " +hrtrab+ " horas por R$ " +valor+ " e deve receber R$" +Salario );break;
+            case 5:System.out.println("Valor da hr : R$33,00 REAIS Seu salario é: " + Salario);
+             System.out.println( "O funcionario " + nome + " trabalhou " +hrtrab+ " horas por R$ " +valor+ " e deve receber R$" +Salario );break;
+            }
+        }
+        
